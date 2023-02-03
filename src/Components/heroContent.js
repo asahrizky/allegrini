@@ -1,6 +1,6 @@
 import React from "react";
 import bgImg from "../Assets/bg.svg";
-import FormLogin from "./formLogin.js";
+// import FormLogin from "./formLogin.js";
 
 const HeroContent = () => {
   return (
@@ -23,7 +23,7 @@ const HeroContent = () => {
         </div>
         {/*Content kanan*/}
         <div className="top-0 flex justify-end items-center w-[100vw] h-[100vh]">
-          <FormLogin />
+          {/* <FormLogin /> */}
         </div>
       </div>
       {/*Arrow bottom*/}
@@ -48,6 +48,52 @@ const HeroContent = () => {
           </svg>
         </div>
       </button>
+
+      {/* <!-- Asah Punya --> */}
+      <div className="bg-ales h-screen w-auto">
+        <div className="flex relative">
+          <div className="w-[660px] h-[404px]">
+            <img
+              className="py-8 w-full h-full"
+              src="../src/img/Rectangle 7.png"
+              alt=""
+            />
+          </div>
+
+          <div className="absolute bg-white w-[712px] h-[286px] flex flex-col justify-center gap-8 left-[600px] top-[100px] pl-20 border-[2px]">
+            <h3 className="text-alestext">
+              <b>About Allegrini</b>
+            </h3>
+            <p className="text-alesph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              in, doloribus magnam nam voluptatum cum expedita laboriosam cumque
+              id quia laudantium eos reprehenderit praesentium dolores
+              repellendus earum. Architecto, doloribus ex.
+            </p>
+            <a className="text-alestext" href="erPage">
+              <b>
+                <u>Read More</u>
+              </b>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex">
+          <img className="py-16" src="../src/img/Line 1.svg " alt="" />
+          <h3 className="py-14 px-6">
+            <b>Our Partners</b>
+          </h3>
+        </div>
+
+        <div className="flex">
+          <img className="px-2" src="../src/img/partner1.png" alt="" />
+          <img className="px-4" src="../src/img/partner2.png" alt="" />
+          <img className="px-6" src="../src/img/partner3.png" alt="" />
+          <img className="px-8" src="../src/img/partner4.png" alt="" />
+          <img src="../src/img/partner5.png" alt="" />
+        </div>
+      </div>
+      {/* <!-- Asah Punya --> */}
     </div>
   );
 };

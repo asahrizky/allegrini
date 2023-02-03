@@ -1,6 +1,18 @@
 import React from "react";
 import logo from "../Assets/logo.svg";
 
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 50) {
+    document.getElementById("navBar").style.backgroundColor = "#7D794F";
+  } else {
+    document.getElementById("navBar").style.backgroundColor = "transparent";
+  }
+}
+
 const navBar = () => {
   return (
     <div>
@@ -40,17 +52,5 @@ const navBar = () => {
     </div>
   );
 };
-
-window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
-  if (document.documentElement.scrollTop > 50) {
-    document.getElementById("navBar").style.backgroundColor = "#7D794F";
-  } else {
-    document.getElementById("navBar").style.backgroundColor = "transparent";
-  }
-}
 
 export default navBar;

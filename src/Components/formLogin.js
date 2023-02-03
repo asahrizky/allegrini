@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Popup = () => {
+
+const formLogin = () => {
   return (
     <div>
-      <div className="flex flex-col rounded-[10px] bg-[#F5F4EF] w-full h-100vh] justify-center items-center shadow-2xl">
+      <div className="inline-block rounded-[10px] bg-[#F5F4EF] w-full h-100vh] justify-center items-center shadow-2xl">
         <div className="pt-10 font-poppins text-center text-4xl font-bold text-[#7D794F]">
           Welcome back!
         </div>
@@ -59,4 +60,4 @@ const Popup = () => {
   );
 }
 
-export default Popup
+export default formLogin
