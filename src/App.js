@@ -1,23 +1,36 @@
+import Slider from "./components/Slider";
 import logo from "./logo.svg";
+
 import "./styles/base.css";
 
 function App() {
+  const sliders = [
+    {
+      image: "./asset/about1.png",
+      title: "About Us 1",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl.",
+      link: "https://www.google.com",
+    },
+    {
+      image: "./asset/about2.png",
+      title: "About Us 2 Broo",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl.",
+      link: "https://www.google.com",
+    },
+    {
+      image: "./asset/partner1.png",
+      title: "About Us 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl.",
+      link: "https://www.google.com",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-alles-200">
+      <Slider images={sliders} />
     </div>
   );
 }
