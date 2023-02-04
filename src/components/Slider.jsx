@@ -77,12 +77,19 @@ export default function Slider({ images = [], onPrev, onNext }) {
           </button>
         </div>
       </div>
-      <div className="relative">
-        <div className="flex absolute py-[570px]">
+      <div className="relative py-[450px]">
+        <div className="flex absolute py-[100px]">
           <img src="./asset/Line1.svg" alt="" />
           <h1 className="px-4">
             <b>OUR PARTNERS</b>
           </h1>
+        </div>
+        <div className="flex">
+          <img className="py-40" src="./asset/partner1.png" alt="" />
+          <img className="py-40 px-5" src="./asset/partner2.png" alt="" />
+          <img className="py-40 px-5" src="./asset/partner3.png" alt="" />
+          <img className="py-40 px-5" src="./asset/partner4.png" alt="" />
+          <img className="py-40 px-5" src="./asset/partner5.png" alt="" />
         </div>
       </div>
     </div>
