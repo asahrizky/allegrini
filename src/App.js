@@ -1,3 +1,6 @@
+/** @format */
+
+import DetailProduk from "./components/DetailProduk";
 import Slider from "./components/Slider";
 import logo from "./logo.svg";
 
@@ -22,8 +25,11 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-alles-200">
-      <Slider images={sliders} />
+    <div>
+      <div className="min-h-screen bg-alles-200">
+        <Slider images={sliders} />
+      </div>
+      <DetailProduk />
     </div>
   );
 }
