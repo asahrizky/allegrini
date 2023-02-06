@@ -1,7 +1,9 @@
 /** @format */
-
-import DetailProduk from "./components/DetailProduk";
-import Slider from "./components/Slider";
+import FormLogin from "./Components/FormLogin";
+import DetailProduk from "./Components/DetailProduk";
+import Slider from "./Components/Slider";
+import Navbar from "./Components/Navbar";
+import HeroContent from "./Components/heroContent";
 import logo from "./logo.svg";
 
 import "./styles/base.css";
@@ -26,6 +28,8 @@ function App() {
 
   return (
     <div>
+      <Navbar />
+      <HeroContent />
       <div className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
       </div>

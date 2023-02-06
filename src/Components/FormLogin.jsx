@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
-
-const formLogin = () => {
+const FormLogin = () => {
   return (
     <div>
       <div className="inline-block rounded-[10px] bg-[#F5F4EF] w-full h-100vh] justify-center items-center shadow-2xl">
@@ -58,6 +57,6 @@ const formLogin = () => {
       </div>
     </div>
   );
-}
+};
 
-export default formLogin
+export default FormLogin;

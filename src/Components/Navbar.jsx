@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../Assets/logo.svg";
 
-window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
+function onScrollNavbar() {
   if (document.documentElement.scrollTop > 50) {
-    document.getElementById("navBar").style.backgroundColor = "#7D794F";
+    document.getElementById("Navbar").style.backgroundColor = "#7D794F";
   } else {
-    document.getElementById("navBar").style.backgroundColor = "transparent";
+    document.getElementById("Navbar").style.backgroundColor = "transparent";
   }
 }
 
-const navBar = () => {
+const Navbar = () => {
+  useEffect(() => {
+    window.onscroll = onScrollNavbar;
+
+    return () => {
+      window.onscroll = null;
+    };
+  }, []);
+
   return (
     <div>
-      <nav id="navBar" className="fixed z-[9999] w-full">
+      <nav id="Navbar" className="fixed z-[9999] w-full mb-20 bg-alles-500">
         <div className="flex justify-between items-center container mx-auto w-full pl-4 py-4">
           <div className="flex items-center gap-24 font-Poppins text-white text-lg">
             <button className="hover:text-[#AE9A64] transition ease-in-out duration-300">
@@ -53,4 +57,4 @@ const navBar = () => {
   );
 };
 
-export default navBar;
+export default Navbar;
