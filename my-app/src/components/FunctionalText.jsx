@@ -13,7 +13,6 @@ function AnakText(){
 }
 
 //Atau Penulisan kedua bisa pake ECMAScript (ada kaidah bakunya) 
-//Latihan ini
 
 
 function FunctionalComponent(){
