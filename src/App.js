@@ -5,7 +5,7 @@ import Slider from "./Components/Slider";
 import Navbar from "./Components/Navbar";
 import HeroContent from "./Components/heroContent";
 import logo from "./logo.svg";
-
+import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
       <div className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
       </div>
+      <NewProduk />
       <DetailProduk />
     </div>
   );
