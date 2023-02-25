@@ -5,8 +5,11 @@ import Slider from "./Components/Slider";
 import Navbar from "./Components/Navbar";
 import HeroContent from "./Components/heroContent";
 import logo from "./logo.svg";
-import { NewProduk } from "./Components/NewProduk";
+import NewProduk from "./Components/NewProduk";
 import "./styles/base.css";
+import { Route, Routes } from "react-router-dom";
+import ProductSingle from "./Components/ProductSingle";
+import FormSignUp from "./Components/FormSignUp";
 
 function App() {
   const sliders = [
@@ -27,15 +30,23 @@ function App() {
   ];
 
   return (
-    <div>
+    <>
       <Navbar />
-      <HeroContent />
-      <div className="min-h-screen bg-alles-200">
+
+      <Routes>
+        <Route path="/" element={<HeroContent />}>
+          <Route path="/Login" element={<FormLogin />} />
+          <Route path="/SignUp" element={<FormSignUp />} />
+        </Route>
+      </Routes>
+      {/* <div className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
-      </div>
-      <NewProduk />
-      <DetailProduk />
-    </div>
+      </div> */}
+      <Routes>
+        <Route path="/product" element={<NewProduk />} />
+        <Route path="/product/:id" element={<ProductSingle />} />
+      </Routes>
+    </>
   );
 }
 

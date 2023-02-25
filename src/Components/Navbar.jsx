@@ -1,14 +1,15 @@
 /** @format */
 
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../Assets/logo.svg";
 
 function onScrollNavbar() {
-  // if (document.documentElement.scrollTop > 50) {
-  //   document.getElementById("Navbar").style.backgroundColor = "#7D794F";
-  // } else {
-  //   document.getElementById("Navbar").style.backgroundColor = "transparent";
-  // }
+  if (document.documentElement.scrollTop > 50) {
+    document.getElementById("Navbar").style.backgroundColor = "#7D794F";
+  } else {
+    document.getElementById("Navbar").style.backgroundColor = "transparent";
+  }
 }
 
 const Navbar = () => {
@@ -36,21 +37,21 @@ const Navbar = () => {
             </button>
           </div>
 
-          <button className="flex items-center max-w-full h-auto">
-            <a href="heroPage">
-              <img src={logo} alt="Logo" />
-            </a>
-          </button>
+          <Link to="/" className="flex items-center max-w-full h-auto">
+            <img src={logo} alt="Logo" />
+          </Link>
 
           <div className="flex items-center gap-8 font-Poppins text-white text-base">
-            <button
-              id="loginBtn"
+            <Link
+              to="/Login"
               className="hover:text-[#AE9A64] hover:bg-white hover:border h-10 w-32 px-8 py-2 transition ease-in duration-200">
-              <a href="Login.html">Login</a>
-            </button>
-            <button className="items-center box-border h-10 w-32 px-8 py-2 border hover:text-[#AE9A64] hover:border-[#AE9A64] hover:bg-white transition ease-in duration-200">
-              <a href="SignUp.html">Sign up</a>
-            </button>
+              Login
+            </Link>
+            <Link
+              to="/SignUp"
+              className="items-center box-border h-10 w-32 px-8 py-2 border hover:text-[#AE9A64] hover:border-[#AE9A64] hover:bg-white transition ease-in duration-200">
+              Sign up
+            </Link>
           </div>
         </div>
       </nav>
