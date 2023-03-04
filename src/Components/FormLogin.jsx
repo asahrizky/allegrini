@@ -1,10 +1,10 @@
-import React from 'react'
+/** @format */
 
-
-const formLogin = () => {
+import React from "react";
+const FormLogin = () => {
   return (
-    <div>
-      <div className="inline-block rounded-[10px] bg-[#F5F4EF] w-full h-100vh] justify-center items-center shadow-2xl">
+    <div className="">
+      <div className="inline-block rounded-[10px] bg-[#F5F4EF] w-96 h-100vh] justify-center items-center shadow-2xl">
         <div className="pt-10 font-poppins text-center text-4xl font-bold text-[#7D794F]">
           Welcome back!
         </div>
@@ -41,8 +41,7 @@ const formLogin = () => {
         <div className="flex justify-center items-center pt-6 font-poppins font-extrabold text-white">
           <a
             href="SignedIn.html"
-            className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300"
-          >
+            className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300">
             Sign In
           </a>
         </div>
@@ -50,14 +49,12 @@ const formLogin = () => {
           <span className="pr-3 text-[#7D794F]">Don't have an account? </span>
           <a
             href="SignUp.html"
-            className="underline text-[#AE9A64] hover:text-[#7D794F]"
-          >
+            className="underline text-[#AE9A64] hover:text-[#7D794F]">
             Sign up
           </a>
         </div>
       </div>
     </div>
   );
-}
-
-export default formLogin
+};
+export default FormLogin;
