@@ -1,6 +1,7 @@
 import React from "react";
 // import bgImg from "../Assets/bg.svg";
 import bgImg from "../Assets/bg.webp"
+import { Link } from "react-router-dom";
 import { Outlet, useLocation, useNavigate } from "react-router-dom"; 
 // import FormLogin from "./formLogin.js";
 
@@ -25,9 +26,11 @@ const HeroContent = () => {
           <h1 className="text-3xl font-bold pb-6">
             Hotel Amenities Solutions.
           </h1>
-          <button className="items-center flex text-[#7D794F] bg-white border border-white hover:shadow-inner hover:border hover:border-white hover:bg-transparent hover:text-white px-11 py-2 self-start">
-            Shop
-          </button>
+          <Link to= "/product">
+            <button className="items-center flex text-[#7D794F] bg-white border border-white hover:shadow-inner hover:border hover:border-white hover:bg-transparent hover:text-white px-11 py-2 self-start">
+              Shop
+            </button>
+          </Link>
         </div>
         {/*Content kanan*/}
         <div className="flex flex-1 h-full items-center">
