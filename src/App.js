@@ -1,12 +1,13 @@
 /** @format */
 import FormLogin from "./Components/FormLogin";
-import DetailProduk from "./Components/DetailProduk";
-import Slider from "./Components/Slider";
+// import DetailProduk from "./Components/DetailProduk";
+// import Slider from "./Components/Slider";
 import Navbar from "./Components/Navbar";
 import HeroContent from "./Components/heroContent";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
+import ProductSingle from "./Components/ProductSingle";
 import {Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 
@@ -34,7 +35,7 @@ function App() {
   ];
 
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path ='/' element ={ <HeroContent/> }>
@@ -42,11 +43,14 @@ function App() {
           <Route path ='SignUp' element ={ <FormSignUp/> } />
         </Route>
       </Routes>
-      <div id="slider" className="min-h-screen bg-alles-200">
+      {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
-      </div>
-      <DetailProduk />
-    </div>
+      </div> */}
+      <Routes>
+        <Route path="/product" element={<NewProduk />} />
+        <Route path="/product/:id" element={<ProductSingle />} />
+      </Routes>
+    </>
   );
 }
 

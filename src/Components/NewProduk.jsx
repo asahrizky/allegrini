@@ -91,3 +91,5 @@ export const NewProduk = () => {
     </div>
   );
 };
+
+export default NewProduk;
