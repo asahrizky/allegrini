@@ -1,5 +1,6 @@
 import React from "react";
-import bgImg from "../Assets/bg.svg";
+// import bgImg from "../Assets/bg.svg";
+import bgImg from "../Assets/bg.webp"
 import { Outlet, useLocation, useNavigate } from "react-router-dom"; 
 // import FormLogin from "./formLogin.js";
 
