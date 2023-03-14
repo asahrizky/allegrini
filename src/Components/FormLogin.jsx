@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FormLogin = () => {
   return (
@@ -38,21 +39,15 @@ const FormLogin = () => {
           <button className="hover:underline">Forgot Password</button>
         </div>
         <div className="flex justify-center items-center pt-6 font-poppins font-extrabold text-white">
-          <a
-            href="SignedIn.html"
-            className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300"
-          >
+          <Link to="/ProfilePage" className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300">
             Sign In
-          </a>
+          </Link>
         </div>
         <div className="flex justify-center items-center pt-6 font-poppins text-base">
           <span className="pr-3 text-[#7D794F]">Don't have an account? </span>
-          <a
-            href="SignUp.html"
-            className="underline text-[#AE9A64] hover:text-[#7D794F]"
-          >
+          <Link to="/SignUp" className="underline text-[#AE9A64] hover:text-[#7D794F]">
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
     </div>

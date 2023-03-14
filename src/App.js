@@ -1,15 +1,16 @@
 /** @format */
 import FormLogin from "./Components/FormLogin";
 // import DetailProduk from "./Components/DetailProduk";
-// import Slider from "./Components/Slider";
+import Slider from "./Components/Slider";
 import Navbar from "./Components/Navbar";
-import HeroContent from "./Components/heroContent";
+import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
 import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
-import ProductSingle from "./Components/ProductSingle";
+import ProductSingle from "./Components/ProdukSingle";
 import {Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
+import ProfilePage from "./Pages/ProfilePage";
 
 
 // app.use("/", router);
@@ -36,20 +37,25 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
-        <Route path ='/' element ={ <HeroContent/> }>
-          <Route path ='Login' element ={ <FormLogin/> } />
+        <Route path ='/' element ={ <HeroPage/> }>
+          <Route path ='Login' element ={ <FormLogin/> } >
+          </Route>
           <Route path ='SignUp' element ={ <FormSignUp/> } />
         </Route>
+        <Route path="product" element={<NewProduk />} >
+            <Route path="product/:id" element={<ProductSingle />} />
+        </Route>
+        <Route path = 'ProfilePage' element = {<ProfilePage/>}/>
       </Routes>
-      {/* <div id="slider" className="min-h-screen bg-alles-200">
+      <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
-      </div> */}
+      </div>
       <Routes>
-        <Route path="/product" element={<NewProduk />} />
-        <Route path="/product/:id" element={<ProductSingle />} />
+
       </Routes>
+
     </>
   );
 }
