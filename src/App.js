@@ -1,5 +1,6 @@
 /** @format */
 import FormLogin from "./Components/FormLogin";
+<<<<<<< HEAD
 // import DetailProduk from "./Components/DetailProduk";
 import Slider from "./Components/Slider";
 import Navbar from "./Components/Navbar";
@@ -18,6 +19,18 @@ import Wishlist from "./Pages/Wishlist";
 // app.use("/", router);
 
 
+=======
+import DetailProduk from "./Components/DetailProduk";
+import Slider from "./Components/Slider";
+import Navbar from "./Components/Navbar";
+import HeroContent from "./Components/heroContent";
+import logo from "./logo.svg";
+import NewProduk from "./Components/NewProduk";
+import "./styles/base.css";
+import { Route, Routes } from "react-router-dom";
+import ProductSingle from "./Components/ProductSingle";
+import FormSignUp from "./Components/FormSignUp";
+>>>>>>> f1b04ce1bee0966b235af7d09556cb05c44e081a
 
 function App() {
   const sliders = [
@@ -39,6 +52,7 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       {/* <Navbar /> */}
       <Routes>
         <Route path ='/' element ={ <HeroPage/> }>
@@ -59,6 +73,23 @@ function App() {
 
       </Routes>
 
+=======
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<HeroContent />}>
+          <Route path="/Login" element={<FormLogin />} />
+          <Route path="/SignUp" element={<FormSignUp />} />
+        </Route>
+      </Routes>
+      {/* <div className="min-h-screen bg-alles-200">
+        <Slider images={sliders} />
+      </div> */}
+      <Routes>
+        <Route path="/product" element={<NewProduk />} />
+        <Route path="/product/:id" element={<ProductSingle />} />
+      </Routes>
+>>>>>>> f1b04ce1bee0966b235af7d09556cb05c44e081a
     </>
   );
 }
