@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 
 const FormSignUp = () => {
@@ -60,22 +61,20 @@ const FormSignUp = () => {
           </div>
         </div>
         <div className="flex justify-center items-center pt-6 font-poppins font-extrabold text-white">
-          <a
-            href="SignedIn.html"
+          <Link to = '/Login'
             className="bg-[#6E7E2B] py-4 px-24 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300"
           >
             Create an account
-          </a>
+          </Link>
         </div>
         <div className="flex justify-center items-center pt-6 font-poppins text-base">
           <span className="pr-3 text-[#7D794F]">Already have an account? </span>
-          <a
-            href="Login.html"
+          <Link to = '/Login'
             className="underline text-[#AE9A64] hover:text-[#7D794F]"
           >
             {" "}
             Sign In{" "}
-          </a>
+          </Link>
         </div>
       </div>
     </div>

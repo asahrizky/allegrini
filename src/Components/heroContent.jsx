@@ -36,7 +36,7 @@ const HeroContent = () => {
       {/*Content*/}
       <div className={`absolute top-0 mx-auto h-full w-full px-4 items-center flex justify-end ${location !== "/" && location !== "/ProfilePage" && "backdrop-blur-sm"}`}>
         {/*Content kiri*/}
-        <div className="flex flex-col flex-1 justify-center w-full h-full font-Poppins text-white pl-20 " >
+        <div className="flex flex-col flex-1 justify-center w-full h-full font-['Poppins'] text-white pl-20 " >
           <div className="text-base pb-3">100% Made in Italy top quality.</div>
           <h1 className="text-3xl font-bold pb-6">
             Hotel Amenities Solutions.
@@ -54,7 +54,7 @@ const HeroContent = () => {
       </div>
       {/*arrow bottom*/}
       <button className="flex-row flex absolute bottom-10 right-20 gap-7 transition hover:translate-x-6 ease-in duration-300">
-        <div className="flex text-white font-Poppins">
+        <div className="flex text-white font-['Poppins']">
           Shop Allegrini's Collections
         </div>
         <div className="flex text-white">

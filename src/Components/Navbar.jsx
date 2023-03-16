@@ -26,7 +26,7 @@ const Navbar = () => {
     <div>
       <nav id="Navbar" className={`fixed z-[9999] w-full mb-20 ${scroll > 50 && "bg-[#7D794F]"}`}>
         <div className="flex justify-between items-center container mx-auto w-full pl-4 py-4">
-          <div className="flex items-center gap-24 font-Poppins text-white text-lg">
+          <div className="flex items-center gap-24 font-['Poppins'] text-white text-lg">
             <button className="hover:text-[#AE9A64] transition ease-in-out duration-300">
               <a href="#slider">About</a>
             </button>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <img src={logo} alt="Logo" />
           </Link>
 
-          <div className="flex items-center gap-8 font-Poppins text-white text-base">
+          <div className="flex items-center gap-8 font-['Poppins'] text-white text-base">
             <Link to= 'Login'
               className="hover:text-[#AE9A64] hover:bg-white hover:border h-10 w-32 px-8 py-2 transition ease-in duration-200 text-center">
               Login

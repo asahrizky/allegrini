@@ -11,6 +11,8 @@ import ProductSingle from "./Components/ProdukSingle";
 import {Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 import ProfilePage from "./Pages/ProfilePage";
+import PersonalInfo from "./Pages/PersonalInfo"
+import Wishlist from "./Pages/Wishlist";
 
 
 // app.use("/", router);
@@ -40,18 +42,19 @@ function App() {
       {/* <Navbar /> */}
       <Routes>
         <Route path ='/' element ={ <HeroPage/> }>
-          <Route path ='Login' element ={ <FormLogin/> } >
-          </Route>
+          <Route path ='Login' element ={ <FormLogin/> } />
           <Route path ='SignUp' element ={ <FormSignUp/> } />
         </Route>
         <Route path="product" element={<NewProduk />} >
             <Route path="product/:id" element={<ProductSingle />} />
         </Route>
-        <Route path = 'ProfilePage' element = {<ProfilePage/>}/>
+        <Route path ="ProfilePage" element = {<ProfilePage/>} />
+        <Route path="/PersonalInfo" element = {<PersonalInfo/>} />
+        <Route path="/Wishlist" element = {<Wishlist/>} />
       </Routes>
-      <div id="slider" className="min-h-screen bg-alles-200">
+      {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
-      </div>
+      </div> */}
       <Routes>
 
       </Routes>
