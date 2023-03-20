@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState, useEffect } from "react";
-// import { Transition } from "@headlessui/react";
+import { Transition } from "@headlessui/react";
 import "./Slider.css";
 // Penggunaan Array Of Object
 export default function Slider({ images = [], onPrev, onNext }) {

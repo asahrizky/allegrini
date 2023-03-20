@@ -14,6 +14,7 @@ import SignedIn from "./Pages/SignedIn"
 import PersonalInfo from "./Components/PersonalInfo";
 import MyOrders from "./Components/MyOrders";
 import Wishlist from "./Components/Wishlist";
+import Footer from "./Components/Footer";
 
 
 
@@ -42,7 +43,6 @@ function App() {
 
   return (
     <>
-
       <Routes>
         <Route path ='/' element ={ <HeroPage/> }>
           <Route path ='Login' element ={ <FormLogin/> } />
@@ -61,9 +61,9 @@ function App() {
       {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
       </div> */}
-      <Routes>
-
-      </Routes>
+      <div>
+        <Footer/>
+      </div>
 
     </>
   );
