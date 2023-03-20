@@ -39,7 +39,7 @@ const FormLogin = () => {
           <button className="hover:underline">Forgot Password</button>
         </div>
         <div className="flex justify-center items-center pt-6 font-['Poppins'] font-extrabold text-white">
-          <Link to="/ProfilePage" className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300">
+          <Link to="/SignedIn" className="bg-[#6E7E2B] py-4 px-44 rounded-lg drop-shadow-lg focus:translate-y-1 border-[#444e1b] border-b-4 transition ease-in-out duration-300">
             Sign In
           </Link>
         </div>

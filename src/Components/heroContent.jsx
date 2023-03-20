@@ -34,7 +34,7 @@ const HeroContent = () => {
         style={{ backgroundImage: `url(${bgImg})` }}
       />
       {/*Content*/}
-      <div className={`absolute top-0 mx-auto h-full w-full px-4 items-center flex justify-end ${location !== "/" && location !== "/ProfilePage" && "backdrop-blur-sm"}`}>
+      <div className={`absolute top-0 mx-auto h-full w-full px-4 items-center flex justify-end ${location !== "/" && location !== "/SignedIn" && "backdrop-blur-sm"}`}>
         {/*Content kiri*/}
         <div className="flex flex-col flex-1 justify-center w-full h-full font-['Poppins'] text-white pl-20 " >
           <div className="text-base pb-3">100% Made in Italy top quality.</div>

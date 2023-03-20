@@ -6,9 +6,9 @@ const ProfilePicture = () => {
   return (
     <div className='flex h-1/3 bg-[#F6F2E4] relative'>
     {/* back button */}
-      <Link to='ProfilePage' className='flex left-0 text-[#7D794F] absolute'>
+      <Link to='/SignedIn' className='flex left-0 text-[#7D794F] absolute'>
       <button className="hover:text-[#AE9A64] transition ease-in duration-200">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"            stroke-width="1" stroke="currentColor" class="w-20 h-20"> <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" className="w-20 h-20"> <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         </button>
       </Link>

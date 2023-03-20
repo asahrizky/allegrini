@@ -1,17 +1,22 @@
 import React from 'react'
-import HeroContent from '../Components/heroContent'
-import NavbarProfile from '../Components/NavbarProfile'
 import '../Assets/fonts.css';
+import ProfilePicture from '../Components/ProfilePicture';
+import ProfileNav from '../Components/ProfileNav';
+import { Outlet } from 'react-router-dom';
+
 
 const ProfilePage = () => {
   return (
-    <div>
-    <>
-      <NavbarProfile/>
-      <HeroContent/>
-    </>
+    <div className='flex h-screen'>
+        <div className='basis-1/3'>
+            <ProfilePicture/>
+            <ProfileNav/>
+        </div>
+        
+        <div className='basis-3/4'>
+            <Outlet/>
+        </div>
     </div>
-    
   )
 }
 

@@ -1,8 +1,7 @@
 /** @format */
 import FormLogin from "./Components/FormLogin";
 // import DetailProduk from "./Components/DetailProduk";
-import Slider from "./Components/Slider";
-import Navbar from "./Components/Navbar";
+// import Slider from "./Components/Slider";
 import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
 import { NewProduk } from "./Components/NewProduk";
@@ -11,8 +10,11 @@ import ProductSingle from "./Components/ProdukSingle";
 import {Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 import ProfilePage from "./Pages/ProfilePage";
-import PersonalInfo from "./Pages/PersonalInfo"
-import Wishlist from "./Pages/Wishlist";
+import SignedIn from "./Pages/SignedIn"
+import PersonalInfo from "./Components/PersonalInfo";
+import MyOrders from "./Components/MyOrders";
+import Wishlist from "./Components/Wishlist";
+
 
 
 // app.use("/", router);
@@ -41,18 +43,20 @@ function App() {
   return (
     <>
 
-      {/* <Navbar /> */}
       <Routes>
         <Route path ='/' element ={ <HeroPage/> }>
           <Route path ='Login' element ={ <FormLogin/> } />
           <Route path ='SignUp' element ={ <FormSignUp/> } />
         </Route>
-        <Route path="product" element={<NewProduk />} >
+        <Route path="/product" element={<NewProduk />} >
             <Route path="product/:id" element={<ProductSingle />} />
         </Route>
-        <Route path ="ProfilePage" element = {<ProfilePage/>} />
-        <Route path="/PersonalInfo" element = {<PersonalInfo/>} />
-        <Route path="/Wishlist" element = {<Wishlist/>} />
+        <Route path="/SignedIn" element = {<SignedIn/>}/>
+        <Route path ="/ProfilePage" element = {<ProfilePage/>}>
+          <Route path ='PersonalInfo' element ={ <PersonalInfo/> } />
+          <Route path ='MyOrders' element ={ <MyOrders/> } />
+          <Route path ='Wishlist' element ={ <Wishlist/> }/>
+        </Route>
       </Routes>
       {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
