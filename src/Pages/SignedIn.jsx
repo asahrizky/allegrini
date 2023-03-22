@@ -10,8 +10,9 @@ const SignedIn = () => {
     <div>
       <NavbarProfile/>
       <HeroContent/>
-      <ContactUs />
       <ProductInfo/>
+      <ContactUs />
+      
     </div>
     </>
 
