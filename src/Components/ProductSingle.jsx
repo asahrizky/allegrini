@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StarIcon } from "@heroicons/react/solid";
-import RelatedProductSlider from "./RelatedProduct";
+
 const ProductSingle = () => {
   const [product, setProduct] = useState(null);
   const params = useParams();
