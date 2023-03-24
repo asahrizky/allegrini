@@ -53,29 +53,16 @@ const HeroContent = () => {
         </div>
       </div>
       {/*arrow bottom*/}
-      <button className="flex-row flex absolute bottom-10 right-20 gap-7 transition hover:translate-x-6 ease-in duration-300">
+      <button className="flex-row flex absolute bottom-10 right-20 gap-7 hover:translate-x-6 transition ease-in duration-300">
         <div className="flex text-white font-['Poppins']">
           Shop Allegrini's Collections
         </div>
         <div className="flex text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            strokeWidth="{1.5}"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-            />
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11.3 19.3q-.275-.275-.288-.7t.263-.7l4.9-4.9H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.175l-4.9-4.9q-.275-.275-.263-.7t.288-.7q.275-.275.7-.275t.7.275l6.6 6.6q.15.125.213.313t.062.387q0 .2-.062.375t-.213.325l-6.6 6.6q-.275.275-.7.275t-.7-.275Z"/></svg>
         </div>
       </button>
     </div>
-  ); console.log(location !== "/" || location !== "/ProfilePage")
+  ); console.log(location !== "/" || location !== "/SignedIn")
 };
 
 

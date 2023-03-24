@@ -4,6 +4,7 @@ import HeroContent from '../Components/heroContent';
 import '../Assets/fonts.css';
 import ContactUs from '../Components/ContactUs';
 import ProductInfo from '../Components/ProductInfo';
+import Collection from '../Components/Collection';
 
 
 const heroPage = () => {
@@ -13,8 +14,8 @@ const heroPage = () => {
         <NavBar />
         <HeroContent />
         <ProductInfo/>
+        <Collection/>
         <ContactUs />
-        
       </>
     </div>
 

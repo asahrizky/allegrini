@@ -22,9 +22,9 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex-1  text-white flex flex-row gap-28 items-start justify-end pt-5 text-lg'>
-          <div> About Allegrini </div>
-          <div> Out Collection </div>
-          <div> Our Partners </div>
+          <button> About Allegrini </button>
+          <button> Our Collection </button>
+          <button> Our Partners </button>
         </div>
       </div>
       <div className='flex text-lg text-white border-t-4'>
