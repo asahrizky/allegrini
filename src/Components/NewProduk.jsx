@@ -17,9 +17,7 @@ export const NewProduk = () => {
 
   const getProducts = async () => {
     try {
-      const response = await axios.get(
-        "https://artsalesroom.com/wp-json/wp/v2/product"
-      );
+      const response = await axios.get(`http://localhost:5000/products`);
       setProducts(response.data);
       console.log(response.data);
     } catch (error) {
@@ -64,13 +62,14 @@ export const NewProduk = () => {
                     />
                   </svg>
                   <img
-                    src={product.gambar.guid}
-                    alt={product.title.rendered}
+                    src={product.linkGambar}
+                    alt={product.nama}
                     className="h-52 w-full mb-10 object-contain object-center group-hover:opacity-75 "
                   />
                 </div>
                 <h3 className="mt-4 text-sm text-gray-700">
-                  {product.title.rendered}
+                  {product.nama}
+                  {console.log(product.title)}
                 </h3>
                 <p className="mt-1 text-lg font-medium text-gray-900">
                   €{product.harga}

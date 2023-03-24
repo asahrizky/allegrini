@@ -7,22 +7,16 @@ import HeroPage from "./Pages/heroPage";
 import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
 import ProductSingle from "./Components/ProductSingle";
-import {Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 import ProfilePage from "./Pages/ProfilePage";
-import SignedIn from "./Pages/SignedIn"
+import SignedIn from "./Pages/SignedIn";
 import PersonalInfo from "./Components/PersonalInfo";
 import MyOrders from "./Components/MyOrders";
 import Wishlist from "./Components/Wishlist";
 import Footer from "./Components/Footer";
 
-
-
-
 // app.use("/", router);
-
-
-
 
 function App() {
   const sliders = [
@@ -45,27 +39,26 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path ='/' element ={ <HeroPage/> }>
-          <Route path ='Login' element ={ <FormLogin/> } />
-          <Route path ='SignUp' element ={ <FormSignUp/> } />
+        <Route path="/" element={<HeroPage />}>
+          <Route path="Login" element={<FormLogin />} />
+          <Route path="SignUp" element={<FormSignUp />} />
         </Route>
-        <Route path="/product" element={<NewProduk />} >
-            <Route path="product/:id" element={<ProductSingle />} />
+        <Route path="/product" element={<NewProduk />}>
+          <Route path="product/:id" element={<ProductSingle />} />
         </Route>
-        <Route path="/SignedIn" element = {<SignedIn/>}/>
-        <Route path ="/ProfilePage" element = {<ProfilePage/>}>
-          <Route path ='PersonalInfo' element ={ <PersonalInfo/> } />
-          <Route path ='MyOrders' element ={ <MyOrders/> } />
-          <Route path ='Wishlist' element ={ <Wishlist/> }/>
+        <Route path="/SignedIn" element={<SignedIn />} />
+        <Route path="/ProfilePage" element={<ProfilePage />}>
+          <Route path="PersonalInfo" element={<PersonalInfo />} />
+          <Route path="MyOrders" element={<MyOrders />} />
+          <Route path="Wishlist" element={<Wishlist />} />
         </Route>
       </Routes>
       {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />
       </div> */}
       <div>
-        <Footer/>
+        <Footer />
       </div>
-
     </>
   );
 }
