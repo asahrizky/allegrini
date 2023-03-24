@@ -6,7 +6,7 @@ import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
 import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
-import ProductSingle from "./Components/ProductSingle";
+import ProductPage from "./Pages/ProductPage";
 import { Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 import ProfilePage from "./Pages/ProfilePage";
@@ -44,7 +44,7 @@ function App() {
           <Route path="SignUp" element={<FormSignUp />} />
         </Route>
         <Route path="/product" element={<NewProduk />}></Route>
-        <Route path="/product/:id" element={<ProductSingle />} />
+        <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/SignedIn" element={<SignedIn />} />
         <Route path="/ProfilePage" element={<ProfilePage />}>
           <Route path="PersonalInfo" element={<PersonalInfo />} />

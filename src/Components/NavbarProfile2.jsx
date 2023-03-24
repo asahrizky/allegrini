@@ -14,7 +14,7 @@ const [showCart, setShowCart] = useState(false);
     
   return (
     
-    <nav className='fixed z-[10] w-full bg-[#7D794F]'>
+    <nav className='sticky z-[10] w-full bg-[#7D794F]'>
         <div className="items-center container mx-auto w-full pl-4 py-4  grid grid-cols-3">
             {/* Navbar kiri */}
             <div className="flex items-center gap-24 font-['Poppins'] text-white text-lg ">
