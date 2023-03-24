@@ -6,6 +6,9 @@ const MyOrders = () => {
       <div className="text-[#7D794F] text-7xl font-['Poppins'] font-bold tracking-widest">
         My Orders
       </div>
+      <div>
+        
+      </div>
       
     </div>
   ) 

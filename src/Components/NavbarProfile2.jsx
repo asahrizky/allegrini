@@ -22,10 +22,10 @@ const [showCart, setShowCart] = useState(false);
                     <a href="#slider">About</a>
                 </button>
                 <button className="hover:text-[#AE9A64]">
-                    Collections
+                    <a href="#Collection">Collections</a>
                 </button>
                 <button className="hover:text-[#AE9A64]">
-                    Contacts
+                    <a href="#ContactUs">Contacts</a>
                 </button>
             </div>
             {/* Navbar tengah */}

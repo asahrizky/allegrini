@@ -11,7 +11,7 @@ const heroPage = () => {
   return (
     <div>
       <>
-        <NavBar />
+        <NavBar/>
         <HeroContent />
         <ProductInfo/>
         <Collection/>

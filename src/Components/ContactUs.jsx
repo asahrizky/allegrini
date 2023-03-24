@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUs = () => {
   return (
     <>
-    <div className="bg-[#F6F2E4] font-['Poppins'] flex flex-col h-full text-[#7D794F]">
+    <div id="ContactUs" className="bg-[#F6F2E4] font-['Poppins'] flex flex-col h-full text-[#7D794F]">
         <div className='flex place-content-center  py-6 text-2xl font-bold '>
         <span className=' py-2 px-10 border-2 border-[#7D794F]'>
             Contact Us
@@ -17,7 +17,7 @@ const ContactUs = () => {
                 <br/>
                 Tel.: +39.035.4242111<br/>
                 Fax: +39.035.526943<br/>
-                Vicolo Salvo d’Acquisto, <br/>
+                Vicolo Salvo d'Acquisto, <br/>
                 2 - 24050 Grassobbio (BG)
             </span>
         </div>

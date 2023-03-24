@@ -31,10 +31,10 @@ const Navbar = () => {
               <a href="#slider">About</a>
             </button>
             <button className="hover:text-[#AE9A64] transition ease-in-out duration-300">
-              <a href="heroPage">Collections</a>
+            <a href="#Collection">Collections</a>
             </button>
             <button className="hover:text-[#AE9A64] transition ease-in-out duration-300">
-              <a href="heroPage">Contacts</a>
+            <a href="#ContactUs">Contacts</a>
             </button>
           </div>
 

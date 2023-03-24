@@ -32,18 +32,18 @@ const NavbarProfile = () => {
         <div className="items-center container mx-auto w-full pl-4 py-4  grid grid-cols-3">
             {/* Navbar kiri */}
             <div className="flex items-center gap-24 font-['Poppins'] text-white text-lg ">
-                <button className="hover:text-[#AE9A64]">
+                <div className="hover:text-[#AE9A64]">
                     <a href="#slider">About</a>
-                </button>
-                <button className="hover:text-[#AE9A64]">
-                    Collections
-                </button>
-                <button className="hover:text-[#AE9A64]s">
-                    Contacts
-                </button>
+                </div>
+                <div className="hover:text-[#AE9A64]">
+                    <a href="#Collection">Collections</a>
+                </div>
+                <div className="hover:text-[#AE9A64]s">
+                    <a href="#ContactUs">Contacts</a>
+                </div>
             </div>
             {/* Navbar tengah */}
-            <Link to= '/SignedIn' className="flex justify-end">
+            <Link to= '/heroPage' className="flex justify-end">
                 <div className="pr-10">
                     <img src={logo} alt="Logo"/>
                 </div>

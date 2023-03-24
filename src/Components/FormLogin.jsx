@@ -25,7 +25,7 @@ const FormLogin = () => {
           <span className="font-bold stroke text-xl">Password </span>
           <div className="py-2 text-base">
             <input
-              type="text"
+              type="password"
               placeholder="Enter your password"
               className="py-4 px-3 rounded-md w-full border-2 mb-1 border-[#7D794F]/30 placeholder-[#7D794F]/50 focus:outline-none focus:border-[#7D794F] focus:ring-1 focus:ring-[#7D794F]"
             />

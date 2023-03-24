@@ -13,7 +13,7 @@ import { Icon } from '@iconify/react';
 const Collection = () => {
   return (
     <>
-    <div className="flex flex-col  font-['Poppins'] text-[#7D794F]">
+    <div id="Collection" className="flex flex-col  font-['Poppins'] text-[#7D794F]">
         <div className='bg-yellow-300 flex font-bold text-2xl justify-center py-3'>
             Oliva del Mediterraneo
         </div>
