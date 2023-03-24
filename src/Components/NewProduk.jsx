@@ -11,6 +11,7 @@ import Image16 from "../img/image 16.png";
 import Image17 from "../img/image 17.png";
 import Line from "../img/Line 1.png";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const NewProduk = () => {
   const [products, setProducts] = useState(null);
@@ -37,7 +38,7 @@ export const NewProduk = () => {
         </div>
 
         <div className="top-2 flex-1 font-bold text-2xl ml-10">
-          <h2 className="text-alesph">Oliva del Mediterrameo Collection</h2>
+          <h2 className=" text-alles-500">Oliva del Mediterrameo Collection</h2>
         </div>
       </div>
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -46,7 +47,10 @@ export const NewProduk = () => {
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products &&
             products.map((product, i) => (
-              <a key={product.id} href={product.link} className="group">
+              <Link
+                key={product.id}
+                to={`/product/${product.id}`}
+                className="group">
                 <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-alles-200 xl:aspect-w-7 xl:aspect-h-8">
                   <svg
                     className="w-11 h-20 ml-3"
@@ -64,17 +68,18 @@ export const NewProduk = () => {
                   <img
                     src={product.linkGambar}
                     alt={product.nama}
-                    className="h-52 w-full mb-10 object-contain object-center group-hover:opacity-75 "
+                    className="h-52 w-full object-contain object-center group-hover:opacity-75 "
                   />
+
+                  <h3 className="text-sm text-alles-500 font-bold font-si text-center ">
+                    {product.nama}
+                    {console.log(product.title)}
+                  </h3>
+                  <p className="mt-1 text-lg text-center font-medium text-alles-500">
+                    €{product.harga}
+                  </p>
                 </div>
-                <h3 className="mt-4 text-sm text-gray-700">
-                  {product.nama}
-                  {console.log(product.title)}
-                </h3>
-                <p className="mt-1 text-lg font-medium text-gray-900">
-                  €{product.harga}
-                </p>
-              </a>
+              </Link>
             ))}
           {/* {products &&
             products.map((product) => {
