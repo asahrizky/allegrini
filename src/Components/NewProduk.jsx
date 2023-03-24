@@ -76,7 +76,7 @@ export const NewProduk = () => {
                     {console.log(product.title)}
                   </h3>
                   <p className="mt-1 text-lg text-center font-medium text-alles-500">
-                    €{product.harga}
+                    {product.harga} €
                   </p>
                 </div>
               </Link>
