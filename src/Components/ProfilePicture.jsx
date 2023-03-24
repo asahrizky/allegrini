@@ -4,7 +4,7 @@ import  pfp from '../Assets/pfp.png'
 
 const ProfilePicture = () => {
   return (
-    <div className='flex mt-16 h-1/3 bg-[#F6F2E4] relative'>
+    <div className='flex h-1/3 bg-[#F6F2E4] relative'>
       <div className='grid grid-cols-2 pl-10 gap-5 h-full '>
       {/* foto */}
         <div className='flex w-full h-full object-contain justify-center items-end'>

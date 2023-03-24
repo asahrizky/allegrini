@@ -63,7 +63,7 @@ const NavbarProfile = () => {
           </div>
         </div>
         {/* Navbar tengah */}
-        <Link to="/heroPage" className="flex justify-end">
+        <Link to="/SignedIn" className="flex justify-end">
           <div className="pr-10">
             <img src={logo} alt="Logo" />
           </div>

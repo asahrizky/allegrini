@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../Assets/logo.svg";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,7 +34,7 @@ const Navbar = () => {
               className="hover:text-[#AE9A64] hover:bg-white hover:border h-10 w-32 px-8 py-2 transition ease-in duration-200 text-center">
               Login
             </Link>
-            <Link to='SignUp' className="items-center box-border h-10 w-32 px-8 py-2 border hover:text-[#AE9A64] hover:border-[#AE9A64] hover:bg-white transition ease-in duration-200">
+            <Link to='/SignUp' className="items-center box-border h-10 w-32 px-8 py-2 border hover:text-[#AE9A64] hover:border-[#AE9A64] hover:bg-white transition ease-in duration-200">
                Sign up
             </Link>
           </div>

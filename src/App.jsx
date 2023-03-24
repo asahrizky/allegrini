@@ -4,7 +4,7 @@ import FormLogin from "./Components/FormLogin";
 // import Slider from "./Components/Slider";
 import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
-import { Catalog } from "./Pages/Catalog";
+import Catalog from "./Pages/Catalog";
 import "./styles/base.css";
 import ProductPage from "./Pages/ProductPage";
 import { Route, Routes } from "react-router-dom";
@@ -15,6 +15,7 @@ import PersonalInfo from "./Components/PersonalInfo";
 import MyOrders from "./Components/MyOrders";
 import Wishlist from "./Components/Wishlist";
 import Footer from "./Components/Footer";
+import CheckoutPage from "./Pages/CheckoutPage";
 
 // app.use("/", router);
 
@@ -51,6 +52,7 @@ function App() {
           <Route path="MyOrders" element={<MyOrders />} />
           <Route path="Wishlist" element={<Wishlist />} />
         </Route>
+        <Route path="/Checkout" element ={<CheckoutPage/>} />
       </Routes>
       {/* <div id="slider" className="min-h-screen bg-alles-200">
         <Slider images={sliders} />

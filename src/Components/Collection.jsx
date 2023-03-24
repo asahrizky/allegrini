@@ -26,20 +26,23 @@ const Collection = () => {
             Our Collection      
         </div>
         </div>
-        <div className='bg-purple-200 flex h-96 overflow-x-auto overscroll-contain'>
-            <div className='flex basis-1/5 bg-red-200'>
+        <div className='bg-purple-200 flex h-96 overflow-x-scroll'>
+            <div className='w-96 bg-red-200'>
 
             </div>
-            <div className='flex basis-1/5 bg-yellow-200'>
+            <div className='w-96 bg-yellow-200'>
 
             </div>
-            <div className='flex basis-1/5 bg-blue-300'>
+            <div className='w-96 bg-blue-300'>
 
             </div>
-            <div className='flex basis-1/5 bg-purple-300'>
+            <div className='w-96 bg-purple-300'>
 
             </div>
-            <div className='flex basis-1/5 bg-green-300'>
+            <div className='w-96 bg-green-300'>
+
+            </div>
+            <div className='w-96 bg-blue-300'>
 
             </div>
         </div>

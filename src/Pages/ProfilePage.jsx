@@ -8,9 +8,11 @@ import NavbarProfile2 from '../Components/NavbarProfile2';
 
 const ProfilePage = () => {
   return (
-    <div className='flex h-screen'>
+    <>
+      <NavbarProfile2/>
+        <div className='flex h-screen'>
+    
         <div className='basis-1/3'>
-            <NavbarProfile2/>
             <ProfilePicture/>
             <ProfileNav/>
         </div>
@@ -19,6 +21,8 @@ const ProfilePage = () => {
             <Outlet/>
         </div>
     </div>
+    </>
+
   )
 }
 

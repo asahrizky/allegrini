@@ -2,7 +2,7 @@ import React from 'react'
 
 const PersonalInfoContent = () => {
   return (
-    <div className='flex flex-col px-20 py-10 pt-44 gap-16 '>
+    <div className='flex flex-col px-20 py-16 gap-16 '>
       <div className="grid grid-cols-2 font-['Poppins'] text-[#7D794F]/70 text-3xl font-semibold gap-12 pl-14">
       <div className='flex flex-col gap-4'>
          <span>Email address*</span>
