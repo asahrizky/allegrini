@@ -6,7 +6,7 @@ import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
 import { NewProduk } from "./Components/NewProduk";
 import "./styles/base.css";
-import ProductSingle from "./Components/ProdukSingle";
+import ProductSingle from "./Components/ProductSingle";
 import {Route, Routes } from "react-router-dom";
 import FormSignUp from "./Components/FormSignUp";
 import ProfilePage from "./Pages/ProfilePage";
