@@ -1,16 +1,30 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 const MyOrders = () => {
   return (
-    <div className='flex flex-col px-20 py-10 gap-16 '>
-      <div className="text-[#7D794F] text-7xl font-['Poppins'] font-bold tracking-widest">
-        My Orders
+    <>
+    <div>
+      <div className='flex flex-row w-full bg-red-300'>
+        <div>
+          All
+        </div>
+        <div>
+          To Pay 
+        </div>
+        <div>
+          To Ship 
+        </div>
+        <div>
+          To Receive
+        </div>
+        <div>
+          Completed
+        </div>
       </div>
-      <div>
-        
-      </div>
-      
     </div>
+    </>
+   
   ) 
 }
 
