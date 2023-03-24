@@ -4,7 +4,7 @@ import FormLogin from "./Components/FormLogin";
 // import Slider from "./Components/Slider";
 import HeroPage from "./Pages/heroPage";
 // import logo from "./logo.svg";
-import { NewProduk } from "./Components/NewProduk";
+import { Catalog } from "./Pages/Catalog";
 import "./styles/base.css";
 import ProductPage from "./Pages/ProductPage";
 import { Route, Routes } from "react-router-dom";
@@ -43,7 +43,7 @@ function App() {
           <Route path="Login" element={<FormLogin />} />
           <Route path="SignUp" element={<FormSignUp />} />
         </Route>
-        <Route path="/product" element={<NewProduk />}></Route>
+        <Route path="/product" element={<Catalog />}></Route>
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/SignedIn" element={<SignedIn />} />
         <Route path="/ProfilePage" element={<ProfilePage />}>

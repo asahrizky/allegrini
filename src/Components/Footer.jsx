@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <div className="h-full bg-[#7D794F] grid grid-rows-3 px-8 font-['Poppins']">
+    <footer className="bg-[#7D794F] grid grid-rows-3 px-8 font-['Poppins']">
       <div className=" flex items-center">
         <img src={logo} />
       </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
