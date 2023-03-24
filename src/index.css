@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+}
+
+@keyframes trans {
+    0%,
+    50% {
+        transform: translatex(100%);
+        
+    }
+    100% {
+        transform: translatex(0);
+        
+    }
+}
