@@ -5,6 +5,7 @@ const MyOrders = () => {
   return (
     <>
     <div>
+    {/* navbar */}
       <div className='flex flex-row w-full bg-red-300'>
         <div>
           All
@@ -22,6 +23,10 @@ const MyOrders = () => {
           Completed
         </div>
       </div>
+    {/* Outlet */}
+    <div>
+      
+    </div>
     </div>
     </>
    
