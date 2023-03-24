@@ -5,7 +5,7 @@ const MyOrders = () => {
   return (
     <>
     <div>
-      <div className='flex flex-row w-full bg-red-300'>
+      <div className='flex flex-row w-full bg-red-300 px-10'>
         <div>
           All
         </div>
