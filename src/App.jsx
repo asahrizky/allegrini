@@ -21,7 +21,7 @@ import MyOrdersReceive from "./Components/MyOrdersReceive";
 import MyOrdersShip from "./Components/MyOrdersShip";
 import MyOrdersPay from "./Components/MyOrdersPay";
 import MyOrdersAll from "./Components/MyOrdersAll";
-import ShippingDelivery from "./Pages/Shipping";
+import Shipping from "./Pages/Shipping";
 import Payment from "./Pages/Payment";
 
 // app.use("/", router);
@@ -44,12 +44,12 @@ function App() {
             <Route path="Completed" element={<MyOrdersComplete />} />
             <Route path="Received" element={<MyOrdersReceive />} />
             <Route path="Ship" element={<MyOrdersShip />} />
-            <Route path="Pay" element={<MyOrdersPay/>} />
+            <Route path="Pay" element={<MyOrdersPay />} />
           </Route>
           <Route path="Wishlist" element={<Wishlist />} />
         </Route>
         <Route path="/Checkout" element={<CheckoutPage />} />
-        <Route path="/ShippingDelivery" element={<ShippingDelivery />} />
+        <Route path="/Shipping" element={<Shipping />} />
         <Route path="/Payment" element={<Payment />} />
       </Routes>
 

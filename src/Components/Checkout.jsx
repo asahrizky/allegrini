@@ -97,9 +97,11 @@ const Checkout = () => {
             </div>
           </div>
           <div className="flex flex-col basis-2/6justify-start items-center gap-5 pt-10">
-            <button className="text-white py-3 px-56 bg-[#6E7E2B]/70 border-2 hover: border-[#6E7E2B]/70 hover:bg-transparent hover:text-[#6E7E2B] text-2xl">
+            <Link
+              to="/Shipping"
+              className="text-white py-3 px-56 bg-[#6E7E2B]/70 border-2 hover: border-[#6E7E2B]/70 hover:bg-transparent hover:text-[#6E7E2B] text-2xl">
               Checkout
-            </button>
+            </Link>
             <Link to="/Catalog" className="text-xl underline">
               Continue Shopping
             </Link>

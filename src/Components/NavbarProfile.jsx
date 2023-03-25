@@ -195,7 +195,7 @@ const NavbarProfile = () => {
                     Yes
                   </Link>
                 </div>
-                <div className=" flex absolute inset-x-0 justify-center  bg-gray-200"></div>
+                <div className=" flex absolute inset-x-0 justify-center"></div>
               </div>
             </div>
           </div>

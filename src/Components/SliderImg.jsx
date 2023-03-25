@@ -1,6 +1,8 @@
+/** @format */
+
 import Slider from "./Slider";
 
-import React from 'react'
+import React from "react";
 
 const SliderImg = () => {
   const sliders = [
@@ -19,22 +21,17 @@ const SliderImg = () => {
       link: "https://www.google.com",
     },
   ];
-  
+
   return (
     <>
       <div>
-      <div id='slider' className="min-h-screen bg-alles-200">
-        <Slider images={sliders} />
-      </div>;
+        <div id="slider" className="h-full w-full bg-alles-200">
+          <Slider images={sliders} />
+        </div>
+        ;
       </div>
     </>
+  );
+};
 
-  )
-}
-
-export default SliderImg
-
-
-
-
-
+export default SliderImg;
