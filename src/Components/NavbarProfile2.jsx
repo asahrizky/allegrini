@@ -13,6 +13,7 @@ const NavbarProfile2 = () => {
   const [showLogout, setShowLogout] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [products, setProducts] = useState(null);
+  const [sukses, setSukses] = useState(false);
 
   const fetchProducts = async () => {
     try {
@@ -22,9 +23,17 @@ const NavbarProfile2 = () => {
       console.error(error);
     }
   };
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/products/${id}`);
+      setSukses(!sukses);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [sukses]);
 
   return (
     <nav className="sticky z-[10] w-full bg-[#7D794F]">
@@ -219,7 +228,9 @@ const NavbarProfile2 = () => {
                           <div className="flex font-semibold text-black text-xl items-center">
                             {product.nama}
                           </div>
-                          <button className="flex underline justify-end text-[#6E7E2B] items-center">
+                          <button
+                            onClick={() => handleDelete(product.id)}
+                            className="flex underline justify-end text-[#6E7E2B] items-center">
                             Remove
                           </button>
                           {/* <div className="flex">500 ml</div> */}
