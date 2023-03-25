@@ -23,7 +23,9 @@ const RelatedProduct = () => {
 
   return (
     <div className="flex flex-col items-start ml-28 ">
-      <div className="font-bold text-5xl my-4">RELATED PRODUCT</div>
+      <div className="font-bold text-5xl my-4 text-[#7D794F]">
+        RELATED PRODUCT
+      </div>
       <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 my-10">
         {product &&
           product.map((product, i) => (
@@ -31,7 +33,7 @@ const RelatedProduct = () => {
               key={product.id}
               to={`/product/${product.id}`}
               className="group">
-              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-alles-200 xl:aspect-w-7 xl:aspect-h-8">
+              <div className="aspect-w-1 aspect-h-1 w-full pb-5 overflow-hidden rounded-lg bg-alles-200 xl:aspect-w-7 xl:aspect-h-8">
                 <svg
                   className="w-11 h-20 ml-3"
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,10 +50,10 @@ const RelatedProduct = () => {
                 <img
                   src={product.linkGambar}
                   alt={product.nama}
-                  className="h-52 w-full object-contain object-center group-hover:opacity-75 "
+                  className="h-52 w-80 object-contain object-center group-hover:opacity-75 "
                 />
 
-                <h3 className="text-sm text-alles-500 font-bold font-si text-center ">
+                <h3 className="text-lg text-alles-500 font-bold font-si text-center ">
                   {product.nama}
                   {console.log(product.title)}
                 </h3>

@@ -279,9 +279,11 @@ const NavbarProfile = () => {
                 </div>
               </div>
               <div className="flex flex-col basis 1/6  gap-3 py-5">
-                <button className="flex place-content-center py-3 bg-[#7D794F]/70 text-[#F6F2E4] hover:bg-transparent hover:text-[#7D794F] border-2 border-[#7D794F]/70 hover:border-[#7D794F]/70">
+                <Link
+                  to="/Checkout"
+                  className="flex place-content-center py-3 bg-[#7D794F]/70 text-[#F6F2E4] hover:bg-transparent hover:text-[#7D794F] border-2 border-[#7D794F]/70 hover:border-[#7D794F]/70">
                   Checkout
-                </button>
+                </Link>
                 <button className="bg-[#F6F2E4] flex place-content-center py-3 border-2 border-[#7D794F]/70 text-[#7D794F]/70 hover:text-white hover:bg-[#7D794F]/70">
                   Go To Shopping Cart
                 </button>
