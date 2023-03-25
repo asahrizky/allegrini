@@ -30,7 +30,7 @@ const MyOrders = () => {
         </Link>
       </div>
       {/* Outlet */}
-      <div className='flex basis-5/6 bg-yellow-300'>
+      <div className='flex basis-5/6 '>
         <Outlet/>
       </div>
     </div>
