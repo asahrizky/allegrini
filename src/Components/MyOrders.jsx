@@ -2,31 +2,37 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 const MyOrders = () => {
+  const navLinkStyles = ({isActive}) =>{
+    return {
+      fontWeight: isActive ? 'underline': 'none',
+    }
+  }
+
   return (
     <>
-    <div>
+    <div className='flex h-5/6 flex-col px-10'>
     {/* navbar */}
-      <div className='flex flex-row w-full bg-red-300'>
-        <div>
+      <div className="flex basis-1/6 flex-row w-full bg-red-300 items-end pb-5 gap-28 font-['Poppins'] text-[#7D794F] font-bold text-xl">
+        <Link>
           All
-        </div>
-        <div>
+        </Link>
+        <Link>
           To Pay 
-        </div>
-        <div>
+        </Link>
+        <Link>
           To Ship 
-        </div>
-        <div>
+        </Link>
+        <Link to='Received' className=''>
           To Receive
-        </div>
-        <div>
+        </Link>
+        <Link to='Completed' className=''>
           Completed
-        </div>
+        </Link>
       </div>
-    {/* Outlet */}
-    <div>
-      
-    </div>
+      {/* Outlet */}
+      <div className='flex basis-5/6 bg-yellow-300'>
+        <Outlet/>
+      </div>
     </div>
     </>
    

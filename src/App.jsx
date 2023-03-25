@@ -16,6 +16,8 @@ import MyOrders from "./Components/MyOrders";
 import Wishlist from "./Components/Wishlist";
 import Footer from "./Components/Footer";
 import CheckoutPage from "./Pages/CheckoutPage";
+import MyOrdersComplete from "./Components/MyOrdersComplete";
+import MyOrdersReceive from "./Components/MyOrdersReceive";
 
 // app.use("/", router);
 
@@ -49,9 +51,13 @@ function App() {
         <Route path="/SignedIn" element={<SignedIn />} />
         <Route path="/ProfilePage" element={<ProfilePage />}>
           <Route path="PersonalInfo" element={<PersonalInfo />} />
-          <Route path="MyOrders" element={<MyOrders />} />
+          <Route path="MyOrders" element={<MyOrders />}>
+            <Route path="Completed" element={<MyOrdersComplete />} />
+            <Route path="Received" element={<MyOrdersReceive />} />
+          </Route>
           <Route path="Wishlist" element={<Wishlist />} />
         </Route>
+        
         <Route path="/Checkout" element ={<CheckoutPage/>} />
       </Routes>
       {/* <div id="slider" className="min-h-screen bg-alles-200">
