@@ -4,6 +4,7 @@ import HeroContent from '../Components/heroContent'
 import ContactUs from '../Components/ContactUs';
 import ProductInfo from '../Components/ProductInfo';
 import Collection from '../Components/Collection';
+import SliderImg from '../Components/SliderImg';
 
 const SignedIn = () => {
   return (
@@ -11,6 +12,7 @@ const SignedIn = () => {
     <div>
       <NavbarProfile/>
       <HeroContent/>
+      <SliderImg/>
       <ProductInfo/>
       <Collection/>
       <ContactUs />

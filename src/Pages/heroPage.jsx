@@ -5,6 +5,7 @@ import '../Assets/fonts.css';
 import ContactUs from '../Components/ContactUs';
 import ProductInfo from '../Components/ProductInfo';
 import Collection from '../Components/Collection';
+import SliderImg from '../Components/SliderImg';
 
 
 const heroPage = () => {
@@ -13,6 +14,7 @@ const heroPage = () => {
       <>
         <NavBar/>
         <HeroContent />
+        <SliderImg/>
         <ProductInfo/>
         <Collection/>
         <ContactUs />

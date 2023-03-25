@@ -12,14 +12,14 @@ const MyOrders = () => {
     <>
     <div className='flex h-5/6 flex-col px-10'>
     {/* navbar */}
-      <div className="flex basis-1/6 flex-row w-full bg-red-300 items-end pb-5 gap-28 font-['Poppins'] text-[#7D794F] font-bold text-xl">
-        <Link>
+      <div className="flex basis-1/6 flex-row w-full items-end pb-5 gap-28 font-['Poppins'] text-[#7D794F] font-bold text-xl">
+        <Link to='All'>
           All
         </Link>
-        <Link>
+        <Link to='Pay'>
           To Pay 
         </Link>
-        <Link>
+        <Link to ='Ship'>
           To Ship 
         </Link>
         <Link to='Received' className=''>

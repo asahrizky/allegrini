@@ -18,27 +18,15 @@ import Footer from "./Components/Footer";
 import CheckoutPage from "./Pages/CheckoutPage";
 import MyOrdersComplete from "./Components/MyOrdersComplete";
 import MyOrdersReceive from "./Components/MyOrdersReceive";
+import MyOrdersShip from "./Components/MyOrdersShip";
+import MyOrdersPay from "./Components/MyOrdersPay";
+import MyOrdersAll from "./Components/MyOrdersAll";
+import ShippingDelivery from "./Pages/Shipping";
+import Payment from "./Pages/Payment";
 
 // app.use("/", router);
 
 function App() {
-  const sliders = [
-    {
-      image: "./asset/about1.png",
-      title: "About Us 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl.",
-      link: "https://www.google.com",
-    },
-    {
-      image: "./asset/about2.png",
-      title: "About Us 2 Broo",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam massa, nec ultricies nisl nunc eget nisl.",
-      link: "https://www.google.com",
-    },
-  ];
-
   return (
     <>
       <Routes>
@@ -52,17 +40,19 @@ function App() {
         <Route path="/ProfilePage" element={<ProfilePage />}>
           <Route path="PersonalInfo" element={<PersonalInfo />} />
           <Route path="MyOrders" element={<MyOrders />}>
+            <Route path="All" element={<MyOrdersAll />} />
             <Route path="Completed" element={<MyOrdersComplete />} />
             <Route path="Received" element={<MyOrdersReceive />} />
+            <Route path="Ship" element={<MyOrdersShip />} />
+            <Route path="Pay" element={<MyOrdersPay/>} />
           </Route>
           <Route path="Wishlist" element={<Wishlist />} />
         </Route>
-        
-        <Route path="/Checkout" element ={<CheckoutPage/>} />
+        <Route path="/Checkout" element={<CheckoutPage />} />
+        <Route path="/ShippingDelivery" element={<ShippingDelivery />} />
+        <Route path="/Payment" element={<Payment />} />
       </Routes>
-      {/* <div id="slider" className="min-h-screen bg-alles-200">
-        <Slider images={sliders} />
-      </div> */}
+
       <div>
         <Footer />
       </div>
